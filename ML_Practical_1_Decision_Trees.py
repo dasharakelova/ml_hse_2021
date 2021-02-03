@@ -185,12 +185,6 @@ def DecisionTreeTrain(data, goal, features, maxdepth='no'):
             return tree
 
 
-# In[15]:
-
-
-DecisionTreeTrain(df, 'ok', ['ai', 'systems', 'morning', 'easy', 'theory'])
-
-
 # In[16]:
 
 
@@ -223,7 +217,7 @@ def dataset_score(tree, data, goal):
 dataset_score(DecisionTreeTrain(df, 'ok', ['ai', 'systems', 'morning', 'easy', 'theory']), df, 'ok')
 
 
-# Now we'll train five trees of different depths and compute the score for each of them.
+# Let's train five trees of different depths and compute the score for each of them.
 
 # In[28]:
 
